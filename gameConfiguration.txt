@@ -1,0 +1,30 @@
+
+#Rooms
+room Hall You are now in the Hall. There is door N. No available items.
+room LivingRoom You are now in the LivingRoom. There are doors N, W, E and S. Available items: chair.
+room Office You are now in the Office. There are doors N and E. Available items: bag
+room Kitchen You are now in the Kitchen. There is door W. Available item: table
+room Bedroom You are now in the Bedroom. There are doors E and S. Available items: key and book
+room Bathroom You are now in the Bathroom. There are doors W and S. No available items.
+
+
+#Doors
+door N-S open Hall LivingRoom
+door E-W closed LivingRoom Kitchen
+door N-S closed LivingRoom Bathroom
+door W-E open LivingRoom Office
+door N-S locked Office Bedroom
+door E-W closed Bedroom Bathroom 
+
+#Items
+item table Kitchen STATIONARY
+item chair LivingRoom STATIONARY
+item key Bedroom USE unlock NS 
+item bag Office MOVE
+item book Bedroom USE read One can be the master of what one does, but never of what one feels. Gustave Flaubert
+
+
+#Start position
+start Hall
+
+
